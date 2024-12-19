@@ -1,5 +1,5 @@
 {
-  "name": "todo-list-react",
+  "name": "todo-list-react-prac",
   "version": "0.1.0",
   "homepage": "https://devanike.github.io/Todo-List-React-2",
   "private": true,
@@ -43,6 +43,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.7.2"
   }
 }

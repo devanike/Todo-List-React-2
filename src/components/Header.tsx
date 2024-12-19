@@ -1,7 +1,12 @@
-import PropTypes from 'prop-types'
 import Button from './Button'
 
-const Header = ({ title, onAdd, showAdd }) => {
+interface HeaderProps {
+  title?: string;
+  onAdd: () => void;
+  showAdd: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ title = 'Todo List', onAdd, showAdd }) => {
 
   return (
     <header className='header'>
@@ -16,11 +21,3 @@ const Header = ({ title, onAdd, showAdd }) => {
 }
 
 export default Header
-
-Header.defaultProps = {
-  title: 'Todo List',
-}
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-}

@@ -1,6 +1,16 @@
 import TaskItem from "./TaskItem"
 
-const Tasks = ({ tasks }) => {
+interface Task {
+  id: number;
+  text: string;
+  day: string;
+}
+
+interface TasksProps {
+  tasks: Task[];
+}
+
+const Tasks: React.FC<TasksProps> = ({ tasks }) => {
 	return (
 		<>
 			{tasks.map((task) => (
